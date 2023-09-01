@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="img">
+                <img src="image1.png" alt="OOPS!" id="image">
+                <div class="options">
+                    <form>
+                        <input type="radio" id="img1" name="img">
+                        <input type="radio" id="img2" name="img">
+                        <input type="radio" id="img3" name="img">
+                    </form>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Casual T Shirt</h3>
+                <h4>$15.00</h4>
+                <h5>30% OFF</h5>
+                <p>Wrangler is an American manufacturer at jeans and other clothing items,
+                    particularly workwear.
+                </p>
+                <form>
+                    <div class="sizes">
+                        <p>Size</p>
+                        <label for="small">
+                            <input type="radio" name="size" id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium">
+                            <span>M</span>
+                        </label>
+                        <label for="large">
+                            <input type="radio" name="size" id="large">
+                            <span>L</span>
+                        </label>
+                        <label for="xlarge">
+                            <input type="radio" name="size" id="xlarge">
+                            <span>XL</span>
+                        </label>
+                        <label for="xxlarge">
+                            <input type="radio" name="size" id="xxlarge">
+                            <span>XXL</span>
+                        </label>
+                    </div>
+                    <div class="color">
+                        <p>Color</p>
+                        <label for="red">
+                            <input type="radio" name="color" id="red">
+                            <span class="color1"></span>
+                        </label>
+                        <label for="green">
+                            <input type="radio" name="color" id="green">
+                            <span class="color2"></span>
+                        </label>
+                        <label for="blue">
+                            <input type="radio" name="color" id="blue">
+                            <span class="color3"></span>
+                        </label>
+                        <label for="pink">
+                            <input type="radio" name="color" id="pink">
+                            <span class="color4"></span>
+                        </label>
+                    </div>
+
+                    <div class="qua">
+                        <p>Quantity</p>
+                        <div class="quantity">
+                            <label for="nos">
+                                <input type="number" id="quantity" value="1">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button>Buy Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var image = document.getElementById("image");
+        var img1 = document.getElementById("img1");
+        var img2 = document.getElementById("img2");
+        var img3 = document.getElementById("img3");
+
+        img1.onclick = function(){
+            image.setAttribute("src", "image1.png");
+        }
+        img2.onclick = function(){
+            image.setAttribute("src", "image2.png");
+        }
+        img3.onclick = function(){
+            image.setAttribute("src", "image3.png");
+        }
+
+    </script>
+</body>
+</html>
